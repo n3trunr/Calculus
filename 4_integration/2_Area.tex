@@ -17,6 +17,13 @@
 \usepackage{psfrag}
 \usepackage{pgfplots}
 \usepackage{bm}
+
+%plotting graph
+%\usepackage{tikz}
+%\usepackage{pgfplot}
+
+%pdfs
+\usepackage{pdfpages}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Other Settings
@@ -63,6 +70,8 @@
 
     \setcounter{section}{4}
     \setcounter{definition}{3}
+    \setcounter{theorem}{1}
+    \setcounter{problem}{9}
 
     \section*{Objectives}
     \begin{itemize}
@@ -83,11 +92,80 @@
         
     \end{definition}
 
-    \subsection*{Remark}
-    The upper and lower bounds must be constant with respect to the index of summation.
-    However, the lower bound doesn't have to be 1. Any integer less than or equal 
-    to the upper bound is legitimate. 
+    \begin{problem}[Examples of Sigma Notation]
+
+        The upper and lower bounds must be constant with respect to the index of summation.
+        However, the lower bound doesn't have to be 1. Any integer less than or equal to 
+        the upper bound is legitimate. 
+
+        \begin{itemize}
+            \item $ \Sigma_{i=1}^6 $ \indent $ i $ 
+            \item $ \Sigma_{i=0}^5 $ \indent $ (i+1) $
+            \item $ \Sigma_{j=3}^7 $ \indent $ j^2  $
+            \item $ \Sigma_{j=1}^5 $ \indent $ \frac{1}{\sqrt[]{j}} $
+            \item $ \Sigma_{k=1}^n $ \indent $ \frac{1}{n} (k^2+1)  $
+            \item $ \Sigma_{i=1}^n $ \indent $ f(x_{i})\Delta x$
+        \end{itemize}
+    \end{problem}
+    
+    \newpage
+
+    \begin{theorem}[Summation formulas]
+        Provide proofs. 
+        \begin{itemize}
+            \item $ \Sigma_{i=1}^n c = cn$, c is a constant
+            \item $ \Sigma_{i=1}^n i = \frac{n(n+1)}{2}$
+            \item $ \Sigma_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$
+            \item $ \Sigma_{i=1}^n i^3 = \frac{n^2(n+1)^2}{4}$
+        \end{itemize}
+    \end{theorem}
+
+    \begin{problem}[Evaluating a Sum]
+        Evaluate $ \Sigma_{i=1}^n \frac{i+1}{n^2} $ for $n = 10, 100, 1000, 10,000$.
+    \end{problem}
+
+    \newpage
+    \includepdf[pages=-]{Upper and Lower Sums.pdf}
+
+
+    \section*{Finding Upper and Lower Sums for a Region Notes}
+    Take notes from pg. 294 from textbook.
+    \newpage
     
 
-    
+    \begin{problem}[Approximating the Area of a Plane Region]
+        Find the upper and lower sums for the region bounded by the graph of $ f(x) = x^2 $
+        and the x-axis between x = 0 and x = 2.
+
+        %Plot graph
+    \end{problem}
+
+    \begin{problem}[Finding Upper and Lower Sums for a Region]
+        
+    \end{problem}
+
+    \begin{theorem}[Limits of the Lower and Upper Sums]
+        
+    \end{theorem}
+
+    \begin{definition}[Definition of the Area of a Region in the Plane]
+        
+    \end{definition}
+
+    \begin{problem}[Finding Area by the Limit Definition]
+        
+    \end{problem}
+
+    \begin{problem}[Finding Area by the Limit Definition]
+        
+    \end{problem}
+
+    \begin{problem}[A Region Bounded by the y-axis]
+        
+    \end{problem}
+
+    \begin{problem}[Approximating Area with the Midpoint Rule]
+        
+    \end{problem}
+
 \end{document}
