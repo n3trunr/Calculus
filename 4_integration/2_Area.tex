@@ -141,31 +141,58 @@
     \end{problem}
 
     \begin{problem}[Finding Upper and Lower Sums for a Region]
-        
+        Find the upper and lower sums for the region bounded by the graph of 
+        $ f(x) = x^2 $ and the x=axis between x = 0 and x = 2. 
     \end{problem}
 
     \begin{theorem}[Limits of the Lower and Upper Sums]
+        Let f be continuous and nonnegative on the interval [a,b]. The limits as
+        $ n \rightarrow \infty $ of both the lower and upper sums exist and are equal to
+        each other.
+
+        That is,
+        $ \lim _{n \to \infty } s(n) = \lim _{n \to \infty } \Sigma_{i=1}^n f(m_{i}\Delta x) $
         
+        \indent $ = \lim _{n \to \infty } \Sigma_{i=1}^n f(M_{i}\Delta x) $
+
+        \indent $ = \lim _{n \to \infty } S(n) $
+        
+        where $\Delta x = (b-a)/n$ and $f(m_{i}) and f(M_{i})$ are the minimum and maximum
+        values of f on the subinterval.
+
     \end{theorem}
 
     \begin{definition}[Definition of the Area of a Region in the Plane]
-        
+        Let f be continuous and nonnegative on the interval [a,b]. The area of the region bounded by the graph
+        of f, the x-axis, and the vertical lines x = a and x = b is
+
+        $ Area = \lim _{n \to \infty } \Sigma_{i=1}^n f(c_{i}\Delta x) $
+
+        where, $x_{i-1} <= c_{i} <= x_{i}$ and
+
+        $\Delta x = \frac{b-a}{n}$
+
+        %%PLOT graph
     \end{definition}
 
     \begin{problem}[Finding Area by the Limit Definition]
-        
+        Find the area of the region bounded by the graph $f(x) = x^3$,
+        the x-axis, and the vertical lines $x = 0$ and $x = 1$.
     \end{problem}
 
     \begin{problem}[Finding Area by the Limit Definition]
-        
+        Find the area of the region bounded by the graph $f(x) = 4 - x^2$,
+        the x-axis, and the vertical lines $x = 1$ and $x = 2$.
     \end{problem}
 
     \begin{problem}[A Region Bounded by the y-axis]
-        
+        Find the area of the region bounded by the graph $f(y) = y^2$,
+        the x-axis, and the vertical lines $y = 0$ and $y = 1$.
     \end{problem}
 
     \begin{problem}[Approximating Area with the Midpoint Rule]
-        
+        Use the Midpoint Rule with n = 4 to approximate the area of the region bounded by the graph of 
+        $f(x) = sin(x)$ and the x-axis for $0 <= x <= \pi$.
     \end{problem}
 
 \end{document}
